@@ -1,17 +1,20 @@
 {
-  "name": "base32",
-  "description": "Base32 encoding and decoding",
-  "version": "0.0.6",
-  "author": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)",
-  "homepage": "https://github.com/agnoster/base32-js",
+  "name": "base32-eos-name",
+  "description": "Base32 encoding for JavaScript works with EOS account naming convention.",
+  "version": "1989.6.4",
+  "author": "Leask Wong <i@leaskh.com> (http://leaskh.com)",
+  "origin": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)",
+  "homepage": "https://github.com/Press-One/base32-eos-name",
   "repository": {
     "type": "git",
-    "url": "git://github.com/agnoster/base32-js.git"
+    "url": "git://github.com/Press-One/base32-eos-name.git"
   },
   "main": "./lib/base32",
-  "bin": "./bin/base32.js",
+  "bin": {
+    "base32": "./bin/base32.js"
+  },
   "scripts": {
-    "test": "./node_modules/.bin/coffee test/*-test.coffee"
+    "test": "coffee test/*-test.coffee"
   },
   "engines": {
     "node": ">0.10"
@@ -25,5 +28,19 @@
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^1.1.0",
     "vows": ">=0.5.6"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Press-One/base32-eos-name/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "base32",
+    "eos",
+    "account",
+    "name"
+  ],
+  "license": "ISC"
 }
